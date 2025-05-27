@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Caixa A",
+    "altura": 20,
+    "largura": 15,
+    "profundidade": 8
+  },
+  {
+    "nome": "Caixa B",
+    "altura": 30,
+    "largura": 25,
+    "profundidade": 40
+  },
+  {
+    "nome": "Caixa C",
+    "altura": 20,
+    "largura": 25,
+    "profundidade": 15
+  },
+  {
+    "nome": "Caixa D",
+    "altura": 8,
+    "largura": 8,
+    "profundidade": 4
+  },
+  {
+    "nome": "Menor Caixa",
+    "altura": 5,
+    "largura": 5,
+    "profundidade": 3
+  }
+]
