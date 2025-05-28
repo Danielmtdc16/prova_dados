@@ -104,10 +104,10 @@ if pagina == paginas['01']:
     st.subheader('Embalagens cadastradas')
     st.dataframe(df_caixas_embalagem)
 
-    df['cabe_em_alguma_caixa'] = df.apply(verificar_se_produto_cabe, axis=1)
-    qtd_produtos_nao_cabem = (df['cabe_em_alguma_caixa'] == False).sum()
-
-    st.metric('Quantidade de produtos que não cabem em caixa alguma', qtd_produtos_nao_cabem)
+    if st.checkbox("Clique para calcular quantos produtos não cabem em caixa alguma"):
+        df['cabe_em_alguma_caixa'] = df.apply(verificar_se_produto_cabe, axis=1)
+        qtd_produtos_nao_cabem = (df['cabe_em_alguma_caixa'] == False).sum()
+        st.metric('Quantidade de produtos que não cabem em caixa alguma', qtd_produtos_nao_cabem)
 
     volume_menor_embalagem = df_caixas_embalagem['volume total'].min()
     produtos_menor_50 = df[df['volume_produto'] < volume_menor_embalagem * 0.5].shape[0]

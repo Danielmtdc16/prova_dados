@@ -24,9 +24,9 @@
     "profundidade": 4
   },
   {
-    "nome": "Menor Caixa",
-    "altura": 5,
-    "largura": 5,
-    "profundidade": 3
+    "nome": "Caixa E",
+    "altura": 1000,
+    "largura": 1000,
+    "profundidade": 1000
   }
 ]
